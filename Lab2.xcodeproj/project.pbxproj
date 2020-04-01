@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86629E032434755C003FF3B6 /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 86629E022434755C003FF3B6 /* Box.m */; };
 		86663F562432DEA700ACA4C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86663F552432DEA700ACA4C8 /* main.m */; };
+		86663F5E2432DFA600ACA4C8 /* DateCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 86663F5C2432DFA600ACA4C8 /* DateCalculator.m */; };
+		86663F632432E08C00ACA4C8 /* enum.txt in Sources */ = {isa = PBXBuildFile; fileRef = 86663F622432E08B00ACA4C8 /* enum.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		86629E012434755C003FF3B6 /* Box.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
+		86629E022434755C003FF3B6 /* Box.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Box.m; sourceTree = "<group>"; };
 		86663F522432DEA700ACA4C8 /* Lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab2; sourceTree = BUILT_PRODUCTS_DIR; };
 		86663F552432DEA700ACA4C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86663F5C2432DFA600ACA4C8 /* DateCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateCalculator.m; sourceTree = "<group>"; };
+		86663F5D2432DFA600ACA4C8 /* DateCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateCalculator.h; sourceTree = "<group>"; };
+		86663F622432E08B00ACA4C8 /* enum.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = enum.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +65,12 @@
 		86663F542432DEA700ACA4C8 /* Lab2 */ = {
 			isa = PBXGroup;
 			children = (
+				86663F622432E08B00ACA4C8 /* enum.txt */,
 				86663F552432DEA700ACA4C8 /* main.m */,
+				86663F5D2432DFA600ACA4C8 /* DateCalculator.h */,
+				86663F5C2432DFA600ACA4C8 /* DateCalculator.m */,
+				86629E012434755C003FF3B6 /* Box.h */,
+				86629E022434755C003FF3B6 /* Box.m */,
 			);
 			path = Lab2;
 			sourceTree = "<group>";
@@ -120,6 +133,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				86663F562432DEA700ACA4C8 /* main.m in Sources */,
+				86629E032434755C003FF3B6 /* Box.m in Sources */,
+				86663F632432E08C00ACA4C8 /* enum.txt in Sources */,
+				86663F5E2432DFA600ACA4C8 /* DateCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

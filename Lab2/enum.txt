@@ -1,0 +1,49 @@
+#import <Foundation/Foundation.h>
+
+// without type
+/* enum { */
+/*   Apple, */
+/*   Samsung, */
+/*   Google */
+/* }; */
+
+// previously
+/* typedef enum { */
+/*   Apple, */
+/*   Samsung, */
+/*   Google */
+/* }; */
+
+/* typedef NSInteger SmartPhone; */
+
+typedef NS_ENUM(NSInteger, SmartPhone) {
+  Apple,
+  Samsung,
+  Google
+};
+
+/* BOOL player = NO; // 1 byte */
+/* BOOL alien = NO; // 1 byte */
+/* BOOL asteroid = YES; // 1 byte */
+
+typedef NS_OPTIONS(NSInteger, EntityCatergory) {
+  EntityCatergoryPlayer     = 1 << 0,
+  EntityCatergoryEnemy      = 1 << 1,
+  EntityCatergoryAlien      = 1 << 2,
+  EntityCatergoryAsteroid   = 1 << 3,
+};
+
+void isPlayerOrEnemy(EntityCatergory entity) {
+  if (entity & EntityCatergoryPlayer) {
+    NSLog(@"%@", @"Player");
+  } else if (entity & EntityCatergoryEnemy) {
+    NSLog(@"%@", @"Enemy");
+  }
+}
+
+int main(int argc, const char * argv[]) {
+  @autoreleasepool {
+    NSLog(@"%@", @"Hello, World!");
+  }
+  return 0;
+}
